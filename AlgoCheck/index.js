@@ -7,7 +7,7 @@ const axios = require('axios');
 const app = express();
 const PORT = 3000;
 
-app.use(cors({ origin: '*' }));
+app.use(cors({ origin: 'https://algochecker.onrender.com' }));
 app.use(bodyParser.json());
 
 mongoose.connect('mongodb+srv://abcd123456:Gourab98@interlink.8ugkc.mongodb.net/?retryWrites=true&w=majority&appName=Interlink', {
