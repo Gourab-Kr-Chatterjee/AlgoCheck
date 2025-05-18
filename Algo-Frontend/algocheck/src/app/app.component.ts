@@ -31,7 +31,7 @@ export class AppComponent {
     this.coversAllEdges = false;
     this.readinessScore = null;
 
-    this.http.post<any>('http://localhost:3000/analyze', {
+    this.http.post<any>('https://algocheck.onrender.com', {
       questionNumber: this.questionNumber,
       code: this.code
     }).subscribe({
